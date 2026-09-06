@@ -1,0 +1,60 @@
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+/*=================ГЛАВНАЯ СТРАНИЦА===============*/
+
+.header_content_contacts {
+  column-gap: 20px;
+}
+
+.header_content_navlist_list {
+  column-gap: 40px;
+}
+
+.firstsec_mainpage_content {
+  max-width: 1000px;
+}
+
+.stepssec_mainpage_content {
+  max-width: 1000px;
+}
+
+.stepssec_mainpage_content_list_item p {
+  font-size: 1.5rem;
+}
+
+
+
+.formsec_mainpage {
+  max-width: unset;
+  width: calc(100vw - 40px);
+}
+
+
+.trustsec_mainpage_content_slider_container {
+  max-width: 1000px;
+}
+
+
+.trustsec_mainpage_content_slider_item img {
+  width: 100%;
+}
+
+
+
+
+.footer_content {
+  max-width: 1000px;
+}
+
+.footer_content_main_form {
+  max-width: 570px;
+}
+
+
+
+
+
+
+
+
+
+}
