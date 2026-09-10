@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+	<title>МК СИСТЕМЫ / БЛОГ / СТАТЬЯ</title>
+</head>
+<body>
+	<div class="wrapper ">
+		<div class="order-modal" id="orderModal">
+	    	<div class="order-modal__overlay"></div>
+		    <div class="order-modal__window">
+		        <button class="order-modal__close" type="button" aria-label="Закрыть">
+		            Закрыть <span>×</span>
+		        </button>
+		        <div class="order-modal__content">
+		            <h2>Оставить заявку</h2>
+		            <p class="order-modal__description">
+		                Расскажите о задаче — поможем подобрать<br class="desktop">
+		                оборудование и уточним условия поставки.
+		            </p>
+		            <form class="order-form">
+		                <input type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+		                <input type="tel" name="phone" placeholder="Телефон *" autocomplete="tel" required data-tel-input>
+		                <textarea name="comment" placeholder="Комментарий к заявке" rows="4"></textarea>
+		                <button type="submit" class="order-form__submit">Отправить заявку</button>
+		                <p class="order-form__privacy">
+		                    Нажимая «Отправить заявку», вы соглашаетесь с обработкой<br class="desktop">
+		                    персональных данных.
+		                </p>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+		<header class="header">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="header_content">
+						<a href="index.html" class="header_content_logo">
+							<img src="img/header_logo.svg" alt="">
+						</a>
+						<nav class="header_content_navlist">
+							<ul class="header_content_navlist_list">
+								<li>
+									<a href="catalog.html">
+										Каталог
+									</a>
+								</li>
+								<li>
+									<a href="about.html">
+										О нас
+									</a>
+								</li>
+								<li>
+									<a href="supplies.html">
+										Поставки
+									</a>
+								</li>
+								<li>
+									<a href="blog.html">
+										Блог
+									</a>
+								</li>
+								<li>
+									<a href="contacts.html">
+										Контакты
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header_content_contacts">
+							<a href="tel:+74951367339" class="header_content_contacts_tel">
+								+8 (495) 136-73-39
+							</a>
+							<button class="header_content_contacts_button btn-fill">
+								Запросить цену
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="breadcrumbs">
+			<a href="index.html">
+				Главная
+			</a>
+			<p>/</p>
+			<a href="blog.html">
+				Блог
+			</a>
+			<p>/</p>
+			<a href="blog_item_7.html">
+				Сушильные камеры
+			</a>
+		</div>
+
+		<section class="firstsec_blogitempage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="firstsec_blogitempage_content">
+						<div class="firstsec_blogitempage_content_title">
+							<b class="upper">СУШИЛЬНЫЕ КАМЕРЫ</b>
+							<h1>Как выбрать сушильную<br> камеру для<br> производства</h1>
+							<p>Материалы для производства  ·  3 мин чтения</p>
+						</div>
+					</div>	
+
+				</div>
+
+			</div>
+			<img src="img/firstsec_blogitem_7.png" alt="">	
+		</section>
+
+		<section class="mainsec_blogitempage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="mainsec_blogitempage_content">
+						<div class="mainsec_blogitempage_content_contents">
+							<b>В ЭТОЙ СТАТЬЕ</b>
+							<div class="mainsec_blogitempage_content_contents_list">
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>01</p>
+									<p>Что будет сушиться</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>02</p>
+									<p>Объём загрузки</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>03</p>
+									<p>Рабочая температура</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>04</p>
+									<p>Циркуляция воздуха</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>05</p>
+									<p>Источник тепла</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>06</p>
+									<p>Отвод влаги</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>07</p>
+									<p>Автоматизация процесса</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>08</p>
+									<p>Условия установки</p>
+								</a>
+								<a href="#" class="mainsec_blogitempage_content_contents_list_item">
+									<p>09</p>
+									<p>Что направить для расчёта</p>
+								</a>
+							</div>
+						</div>
+						<div class="mainsec_blogitempage_content_main">
+							<p>Сушильные камеры применяются в производственных процессах, где необходимо контролируемо удалить влагу из сырья, заготовок, материалов или готовой продукции.</p>
+							<p>В отличие от естественной сушки, промышленное оборудование позволяет поддерживать заданные параметры процесса и получать более стабильный результат.</p>
+							<p>Конструкция и комплектация камеры зависят от материала, требуемой температуры, объёма загрузки и технологии конкретного предприятия. Поэтому выбирать оборудование только по внутренним размерам нельзя.</p>
+
+
+							<h3>Что будет сушиться</h3>
+							<p>Первый вопрос при подборе — назначение оборудования.</p>
+							<ul>Необходимо указать:
+								<li>
+									тип материала или продукции;
+								</li>
+								<li>
+									форму и размеры изделий;
+								</li>
+								<li>
+									начальное состояние;
+								</li>
+								<li>
+									допустимую конечную влажность;
+								</li>
+								<li>
+									чувствительность к температуре;
+								</li>
+								<li>
+									допустимую продолжительность цикла.
+								</li>
+							</ul>
+							<p>Одинаковая камера не может использовать один режим для материалов с разными физическими свойствами.</p>
+
+
+
+							<h3>Объём загрузки</h3>
+							<ul>Производительность сушильного участка зависит от:
+								<li>
+									объёма одной партии;
+								</li>
+								<li>
+									количества циклов;
+								</li>
+								<li>
+									длительности сушки;
+								</li>
+								<li>
+									времени загрузки и выгрузки;
+								</li>
+								<li>
+									графика работы производства.
+								</li>
+							</ul>
+							<p>Слишком маленькая камера может стать ограничивающим участком. Избыточный объём увеличивает стоимость оборудования и расход энергии, особенно при неполной загрузке.</p>
+							<p>Для расчёта важно указывать не только объём одной партии, но и требуемую месячную производительность.</p>
+
+
+							<h3>Рабочая температура</h3>
+							<p>Температурный диапазон подбирается под технологию сушки. Слишком низкая температура увеличивает продолжительность процесса, а чрезмерно высокая способна изменить свойства материала или повредить продукцию.</p>
+							<ul>Кроме максимальной температуры необходимо учитывать:
+								<li>
+									скорость нагрева;
+								</li>
+								<li>
+									равномерность распределения тепла;
+								</li>
+								<li>
+									точность поддержания режима;
+								</li>
+								<li>
+									возможность программного изменения температуры;
+								</li>
+								<li>
+									необходимость постепенного охлаждения.
+								</li>
+							</ul>
+						
+
+							<h3>Циркуляция воздуха</h3>
+							<p>Равномерное движение воздуха помогает удалять влагу по всему объёму загрузки.</p>
+							<p>Если поток распределяется неправильно, часть продукции может высохнуть быстрее, а другая останется недостаточно обработанной.</p>
+							<ul>На циркуляцию влияют:
+								<li>
+									мощность вентиляторов;
+								</li>
+								<li>
+									расположение воздушных каналов;
+								</li>
+								<li>
+									плотность загрузки;
+								</li>
+								<li>
+									расстояние между изделиями;
+								</li>
+								<li>
+									направление потока;
+								</li>
+								<li>
+									внутреннее устройство камеры.
+								</li>
+							</ul>
+							<p>При подборе нужно учитывать не только характеристики вентиляторов, но и фактическую схему размещения продукции.</p>
+
+
+						
+							<h3>Источник тепла</h3>
+							<p>В зависимости от условий предприятия для нагрева могут использоваться различные источники энергии.</p>
+							<ul>При выборе необходимо оценить:
+								<li>
+									доступность ресурса;
+								</li>
+								<li>
+									стоимость эксплуатации;
+								</li>
+								<li>
+									необходимую мощность;
+								</li>
+								<li>
+									требования к подключению;
+								</li>
+								<li>
+									безопасность;
+								</li>
+								<li>
+									удобство регулирования;
+								</li>
+								<li>
+									возможность использования существующей инфраструктуры.
+								</li>
+							</ul>
+							<p>Самый дешёвый источник энергии не всегда обеспечивает наиболее удобное управление процессом.</p>
+							
+
+							<h3>Отвод влаги</h3>
+							<p>Влага, удаляемая из материала, должна выводиться из рабочей зоны. Для этого применяются разные системы вентиляции, рециркуляции или конденсации.</p>
+							<p>Конкретное решение зависит от технологии и характеристик высушиваемой продукции.</p>
+							<p>Недостаточный отвод влажного воздуха увеличивает продолжительность цикла и снижает эффективность оборудования.</p>
+
+
+							<h3>Автоматизация процесса</h3>
+							<ul>Система управления может контролировать:
+								<li>
+									температуру;
+								</li>
+								<li>
+									продолжительность этапов;
+								</li>
+								<li>
+									работу вентиляторов;
+								</li>
+								<li>
+									приток и вытяжку воздуха;
+								</li>
+								<li>
+									изменение режимов;
+								</li>
+								<li>
+									аварийные состояния.
+								</li>
+							</ul>
+							<p>Автоматизация снижает зависимость результата от постоянных действий оператора и помогает повторять отработанные программы.</p>
+							<p>Перечень датчиков и функций необходимо определять по требованиям конкретного производства.</p>
+
+							<h3>Условия установки</h3>
+							<ul>До выбора камеры следует оценить место монтажа:
+								<li>
+									доступную площадь;
+								</li>
+								<li>
+									высоту помещения;
+								</li>
+								<li>
+									пути загрузки;
+								</li>
+								<li>
+									расположение инженерных сетей;
+								</li>
+								<li>
+									возможность обслуживания;
+								</li>
+								<li>
+									требования к вентиляции;
+								</li>
+								<li>
+									состояние основания;
+								</li>
+								<li>
+									температурные условия в помещении.
+								</li>
+							</ul>
+							<p>Также необходимо заранее определить, как материал будет поступать в камеру и выгружаться после завершения цикла.</p>
+
+							<h3>Что направить для расчёта</h3>
+							<ul>Чтобы подобрать промышленную сушильную камеру, поставщику необходимо сообщить:
+								<li>
+									вид материала;
+								</li>
+								<li>
+									размеры продукции;
+								</li>
+								<li>
+									объём одной партии;
+								</li>
+								<li>
+									требуемую производительность;
+								</li>
+								<li>
+									начальные и конечные показатели;
+								</li>
+								<li>
+									температурный диапазон;
+								</li>
+								<li>
+									допустимую продолжительность сушки;
+								</li>
+								<li>
+									доступный источник энергии;
+								</li>
+								<li>
+									место установки;
+								</li>
+								<li>
+									требования к автоматизации.
+								</li>
+							</ul>
+							<p>Опишите материал, объём загрузки и необходимый результат, чтобы получить подбор сушильной камеры, расчёт стоимости и сроков поставки.</p>
+
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<section class="othermaterialssec_blog_itempage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="othermaterialssec_blogitempage">
+						<b class="othermaterialssec_blogitempage_header" class="upper">ПОЛЕЗНО ПО ТЕМЕ</b>
+						<h2>Другие материалы</h2>
+						<div class="othermaterialssec_blogitempage_list">
+							<div class="othermaterialssec_blogitempage_list_item">
+								<img src="img/othermaterialssec_blogitempage_list_item_1.png" alt="">
+								<div class="othermaterialssec_blogitempage_list_item_title">
+									<div class="othermaterialssec_blogitempage_list_item_title_uppart">
+										<b>СТАНКИ</b>
+										<h3>Как выбрать фрезерный станок с ЧПУ</h3>
+									</div>
+									<div class="othermaterialssec_blogitempage_list_item_title_downpart">
+										<p>На что обратить внимание при подборе оборудования.</p>
+										<a href="#">
+											Читать статью →
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="othermaterialssec_blogitempage_list_item">
+								<img src="img/othermaterialssec_blogitempage_list_item_2.png" alt="">
+								<div class="othermaterialssec_blogitempage_list_item_title">
+									<div class="othermaterialssec_blogitempage_list_item_title_uppart">
+										<b>СТАНКИ</b>
+										<h3>Как выбрать лазерный станок для резки листа, труб и профилей</h3>
+									</div>
+									<div class="othermaterialssec_blogitempage_list_item_title_downpart">
+										<p>Исходные данные для подбора конфигурации.</p>
+										<a href="#">
+											Читать статью →
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="othermaterialssec_blogitempage_list_item">
+								<img src="img/othermaterialssec_blogitempage_list_item_3.png" alt="">
+								<div class="othermaterialssec_blogitempage_list_item_title">
+									<div class="othermaterialssec_blogitempage_list_item_title_uppart">
+										<b>СТАНКИ</b>
+										<h3>Как подобрать листогибочный пресс</h3>
+									</div>
+									<div class="othermaterialssec_blogitempage_list_item_title_downpart">
+										<p>Как определить параметры и комплектацию под задачу.</p>
+										<a href="#">
+											Читать статью →
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section class="formsec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="formsec_mainpage_content">
+						<div class="formsec_mainpage_content_form_container">
+							<form action="#" class="formsec_mainpage_content_form">
+								<h3>Нужна поставка оборудования или комплектующих?</h3>
+								<p>Оставьте заявку — подберём позицию, рассчитаем цену и сроки</p>
+								<input type="tel" placeholder="Ваш телефон" required="" data-tel-input>
+								<input type="text" placeholder="Ваша компания" required="">
+								<button class="formsec_mainpage_content_form_submitbtn btn-fill" type="submit">
+									Оставить заявку
+								</button>
+								<div class="formsec_mainpage_content_form_policy">
+									<p>Нажимая кнопку “Оставить заявку” Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a>
+									</p>
+								</div>
+							</form>
+						</div>
+						<img src="img/formsec_mainpage_content_image.png" alt="">
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="full_container">
+				<div class="main__container">
+					<div class="footer_content">
+						<h2>Контакты</h2>
+						<b>Обратная связь</b>
+						<div class="footer_content_main">
+							<div class="footer_content_main_form_container">
+								<form action="#" class="footer_content_main_form">
+									<div class="footer_content_main_form_item">
+										<h4>Имя</h4>
+										<input type="text" required="required">
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Почта</h4>
+										<input type="email" required="required">
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Ваш телефон</h4>
+										<input type="tel" required="required" data-tel-input>
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Комментарии</h4>
+										<textarea name="" id="comment" ></textarea>
+									</div>
+									<button>
+										Оставить заявку
+									</button>
+								</form>
+							</div>
+							<div class="footer_content_main_map">
+								<p>ООО «МК-Системы»</p>
+								<div class="mapsec_contactspage_map" id="map">
+									
+								</div>
+								<p>Адрес г . Москва, Дербеневская набережная, дом 11, 8 этаж, помещение 1В, офис 806</p>
+							</div>
+						</div>
+						<div class="footer_content_downpart">
+							<div class="footer_content_downpart_logoandinfo">
+								<a href="index.html">
+									<img src="img/footer_logo2.svg" alt="">
+								</a>
+								<p>Общество с ограниченной ответственностью «МК-Системы» ООО «МК-Системы»</p>
+								<p>ИНН 7725300847</p>
+								<p>ОГРН 5157746188518</p>
+							</div>
+							<div class="footer_content_downpart_contacts">
+								<div class="footer_content_downpart_contacts_order">
+									<p>Прием заявок 24/7</p>
+									<a href="tel:+74951367339" type="tel">
+										+8 (495) 136-73-39
+									</a>
+									<a href="mailto:mksistemy@yandex.ru">
+										mksistemy@yandex.ru
+									</a>
+								</div>
+								<nav class="footer_content_downpart_contacts_navlist">
+									<ul>
+										<li>
+											<a href="about.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="catalog.html">
+												Каталог
+											</a>
+										</li>
+										<li>
+											<a href="supplies.html">
+												Поставки
+											</a>
+										</li>
+										<li>
+											<a href="blog.html">
+												Блог
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer_content_downpart_policy">
+								<a href="policy.html">
+									Политика конфиденциальности
+								</a>
+								<a href="#">
+									Обработка персональных данных
+								</a>
+								<a href="mailto:mksistemy@yandex.ru">
+									Нашли ошибку? Напишите нам!
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+		<script src="js/jquery-3.6.2.min.js"></script>
+	 	<script src="js/slick.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/main.js"></script> 
+	</div>
+</body>
+</html>
+
