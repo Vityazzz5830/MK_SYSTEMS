@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+	<title>МК СИСТЕМЫ / Главная</title>
+</head>
+<body>
+	<div class="wrapper ">
+
+		<div class="order-modal" id="orderModal">
+	    	<div class="order-modal__overlay"></div>
+		    <div class="order-modal__window">
+		        <button class="order-modal__close" type="button" aria-label="Закрыть">
+		            Закрыть <span>×</span>
+		        </button>
+		        <div class="order-modal__content">
+		            <h2>Оставить заявку</h2>
+		            <p class="order-modal__description">
+		                Расскажите о задаче — поможем подобрать<br class="desktop">
+		                оборудование и уточним условия поставки.
+		            </p>
+		            <form class="order-form">
+		                <input type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+		                <input type="tel" name="phone" placeholder="Телефон *" autocomplete="tel" required data-tel-input>
+		                <textarea name="comment" placeholder="Комментарий к заявке" rows="4"></textarea>
+		                <button type="submit" class="order-form__submit">Отправить заявку</button>
+		                <p class="order-form__privacy">
+		                    Нажимая «Отправить заявку», вы соглашаетесь с обработкой<br class="desktop">
+		                    персональных данных.
+		                </p>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+
+		<header class="header">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="header_content">
+						<a href="index.html" class="header_content_logo">
+							<img src="img/header_logo.svg" alt="">
+						</a>
+						<nav class="header_content_navlist">
+							<ul class="header_content_navlist_list">
+								<li>
+									<a href="#services">
+										Услуги
+									</a>
+								</li>
+								<li>
+									<a href="about.html">
+										О нас
+									</a>
+								</li>
+								<li>
+									<a href="supplies.html">
+										Поставки
+									</a>
+								</li>
+								<li>
+									<a href="blog.html">
+										Блог
+									</a>
+								</li>
+								<li>
+									<a href="contacts.html">
+										Контакты
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header_content_contacts">
+							<a href="tel:+74951367339" class="header_content_contacts_tel">
+								+8 (495) 136-73-39
+							</a>
+							<button class="header_content_contacts_button btn-fill order">
+								Запросить цену
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<section class="firstsec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="firstsec_mainpage_content">
+						<h1>Поставки станков, <br> подшипников и запчастей <br> для производств по России</h1>
+						<b>Подберём нужную позицию или аналог, рассчитаем <br> цену и сроки поставки для вашего предприятия</b>
+						<a href="#" class="btn-fill order">
+							Получить цену за 15 минут
+						</a>
+						<div class="firstsec_mainpage_content_list">
+							<div class="firstsec_mainpage_content_list_item">
+								<p>18 лет на рынке</p>
+							</div>
+							<div class="firstsec_mainpage_content_list_item">
+								<p>Подбор аналогов</p>
+							</div>
+							<div class="firstsec_mainpage_content_list_item">
+								<p>Запрос под тендеры и опт</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<section class="catalogsec_mainpage" id="services">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="catalogsec_mainpage_content">
+						<h2>Что поставляем для производственных предприятий</h2>
+						<b>Подберём нужную позицию или аналог, рассчитаем цену и сроки поставки для вашего предприятия за 15 минут</b>
+						<div class="catalogsec_mainpage_content_list">
+							<a href="machine_tools.html" class="catalogsec_mainpage_content_list_item">
+								<h3>Станки</h3>
+								<img src="img/catalogsec_mainpage_content_list_item_1.png" alt="">
+								<div class="catalogsec_mainpage_content_list_item_title">
+									<p>по маркировке, параметрам или аналогу</p>
+									<img src="img/catalogsec_mainpage_content_list_item_arrow.svg" alt="">
+								</div>
+							</a>
+							<a href="bearings.html" class="catalogsec_mainpage_content_list_item">
+								<h3>Подшипники</h3>
+								<img src="img/catalogsec_mainpage_content_list_item_2.png" alt="">
+								<div class="catalogsec_mainpage_content_list_item_title">
+									<p>для производства и оснащения предприятий</p>
+									<img src="img/catalogsec_mainpage_content_list_item_arrow.svg" alt="">
+								</div>
+							</a>
+							<a href="spareparts.html" class="catalogsec_mainpage_content_list_item">
+								<h3>Запчасти</h3>
+								<img src="img/catalogsec_mainpage_content_list_item_3.png" alt="">
+								<div class="catalogsec_mainpage_content_list_item_title">
+									<p>для ремонта и обслуживания оборудования</p>
+									<img src="img/catalogsec_mainpage_content_list_item_arrow.svg" alt="">
+								</div>
+							</a>
+							<a href="repair.html" class="catalogsec_mainpage_content_list_item">
+								<h3>Ремонт и обслуживание станков</h3>
+								<img src="img/catalogsec_mainpage_content_list_item_41.png" alt="">
+								<div class="catalogsec_mainpage_content_list_item_title">
+									<p>для производственных процессов</p>
+									<img src="img/catalogsec_mainpage_content_list_item_arrow.svg" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="catalogsec_mainpage_content_title">
+							<p>«Отправьте заявку с названием, фото или маркировкой — мы проверим наличие, подберём аналог и рассчитаем стоимость.»</p>
+							<a href="#" class="btn-fill order">
+								Получите расчет за 15 минут
+							</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+
+		<section class="stepssec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="stepssec_mainpage_content">
+						<h2>Как мы работаем</h2>
+						<div class="stepssec_mainpage_content_list">
+							<div class="stepssec_mainpage_content_list_item">
+								<img src="img/stepssec_mainpage_content_list_item_1.svg" alt="">
+								<p>Оставляете<br> заявку</p>
+							</div>
+							<div class="stepssec_mainpage_content_list_item">
+								<img src="img/stepssec_mainpage_content_list_item_2.svg" alt="">
+								<p>Подбираем<br> оборудование<br> и запчасти</p>
+							</div>
+							<div class="stepssec_mainpage_content_list_item">
+								<img src="img/stepssec_mainpage_content_list_item_3.svg" alt="">
+								<p>Даём цену<br> и сроки</p>
+							</div>
+							<div class="stepssec_mainpage_content_list_item">
+								<img src="img/stepssec_mainpage_content_list_item_4.svg" alt="">
+								<p>Поставка</p>
+							</div>
+						</div>
+						<a href="#" class="stepssec_mainpage_content_button btn-fill order">
+							Оставить заявку
+						</a>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<section class="trustsec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="trustsec_mainpage_content">
+						
+						<div class="trustsec_mainpage_content_slider_container">
+							<h2>Нам доверяют</h2>
+							<div class="trustsec_mainpage_content_slider">
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Комплексная поставка подшипников</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_1.png" alt="">
+									<b>Задача:</b>
+									<p>Закрытие заявки по нескольким позициям подшипников для производственного оборудования с соблюдением технических параметров, сроков и подготовки документации.</p>
+									<b>Решение:</b>
+									<p>Проведена проверка маркировки и характеристик, подобраны варианты поставки, согласованы оптимальные условия по срокам и стоимости.</p>
+									<b>Результат:</b>
+									<p>Заявка закрыта в рамках согласованных условий через единого поставщика.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Подбор аналогов оборудования</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_2.png" alt="">
+									<b>Задача:</b>
+									<p>Замена комплектующих, отсутствующих на рынке или с длительными сроками поставки.</p>
+									<b>Решение:</b>
+									<p>Проведен анализ технических требований, подобраны и проверены аналоги.</p>
+									<b>Результат:</b>
+									<p>Найдено рабочее решение без изменения технического задания.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Комплексная поставка подшипников</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_3.png" alt="">
+									<b>Задача:</b>
+									<p>Обеспечение клиента в промышленном регионе комплектующими для планового обслуживания.</p>
+									<b>Решение:</b>
+									<p>Верификация номенклатуры, проверка возможности поставки, подготовка коммерческого предложения, организация отгрузки.</p>
+									<b>Результат:</b>
+									<p>Своевременная доставка полного комплекта.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Поставка редких позиций</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_4.png" alt="">
+									<b>Задача:</b>
+									<p>Поиск сложнодоступных комплектующих.</p>
+									<b>Решение:</b>
+									<p>Активированы дополнительные каналы поиска, проверены сроки и возможности поставки, предложены альтернативы.</p>
+									<b>Результат:</b>
+									<p>Предоставлены реальные варианты решения по каждой позиции.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Организация регулярных поставок</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_5.png" alt="">
+									<b>Задача:</b>
+									<p>Создание стабильного канала поставок для периодических заявок.</b>
+									<p>Разработан процесс работы с заявками, включая проверку позиций, подбор вариантов и сопровождение поставок.</p>
+									<b>Результат:</b>
+									<p>Налажен регулярный канал поставок с сокращением времени поиска комплектующих.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>Работа с техническими заявками</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_6.png" alt="">
+									<b>Задача:</b>
+									<p>Подбор комплектующих по маркировке, параметрам, чертежам и аналогам.</p>
+									<b>Решение:</b>
+									<p>Применены индивидуальный подбор решений и профессиональное сопровождение заказов.</p>
+									<b>Результат:</b>
+									<p>Надёжная поставка с учётом технических требований.</p>
+								</div>
+								<div class="trustsec_mainpage_content_slider_item">
+									<h3>100+ городов и регионов поставок.</h3>
+									<img src="img/trustsec_mainpage_content_slider_item_7.png" alt="">
+									<b>Задача:</b>
+									<p>Организация поставок в города и промышленные регионы.</p>
+									<b>Решение:</b>
+									<p>Применены комплексный подход к решению задач и профессиональное сопровождение заказов.</p>
+									<b>Результат:</b>
+									<p>100+ городов и регионов поставок.</p>
+								</div>
+							</div>
+							<div class="trustsec_mainpage_content_slider_buttons">
+								<button class="trustsec_mainpage_content_slider_buttons_leftbtn">
+									<img src="img/trustsec_mainpage_content_slider_buttons_leftbtn.svg" alt="">
+								</button>
+								<button class="trustsec_mainpage_content_slider_buttons_rightbtn">
+									<img src="img/trustsec_mainpage_content_slider_buttons_rightbtn.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+
+		<section class="deliverysec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="deliverysec_mainpage_content">
+						<div class="deliverysec_mainpage_content_header">
+							<h2>Доставка и гарантия</h2>
+							<p>Полное сопровождение поставки — от отгрузки оборудования до гарантийного обслуживания.</p>
+						</div>
+						<div class="deliverysec_mainpage_content_title">
+							<div class="deliverysec_mainpage_content_title_leftpart">
+								<h3>Доставка оборудования<br> по России и СНГ</h3>
+								<p>Мы организуем логистику с полным сопровождением на каждом этапе: от подготовки оборудования к отгрузке до контроля доставки в ваш город.</p>
+							</div>
+							<div class="deliverysec_mainpage_content_title_rightpart">
+								<h3>Что входит:</h3>
+								<div class="deliverysec_mainpage_content_title_rightpart_list">
+									<div class="deliverysec_mainpage_content_title_rightpart_list_item">
+										<b>01</b>
+										<img src="img/separator.svg" alt="">
+										<p>Доставка в любой город России</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_rightpart_list_item">
+										<b>02</b>
+										<img src="img/separator.svg" alt="">
+										<p>Подбор оптимального способа перевозки</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_rightpart_list_item">
+										<b>03</b>
+										<img src="img/separator.svg" alt="">
+										<p>Онлайн-отслеживание груза</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_rightpart_list_item">
+										<b>04</b>
+										<img src="img/separator.svg" alt="">
+										<p>Экспресс-доставка для срочных заказов</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_rightpart_list_item">
+										<b>05</b>
+										<img src="img/separator.svg" alt="">
+										<p>Приоритетное оформление и ускоренная отправка</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="deliverysec_mainpage_content_title_warranty">
+							<div class="deliverysec_mainpage_content_title_warranty_leftpart">
+								<h3>Отвечаем за каждую деталь</h3>
+								<p>Бесперебойная работа производства зависит от надежности каждой детали, поэтому мы берем на себя ответственность за поставляемое оборудование и комплектующие.</p>
+								<p>Наша гарантия — это не просто формальность, а комплекс обязательств перед клиентом: официальная заводская гарантия, сопровождение на весь гарантийный срок и помощь в решении технических вопросов.</p>
+								<p>Вы получаете официально ввезенное оборудование: товар полностью растаможен, пошлины уплачены, документы оформлены. Это исключает риски проверок, скрытых доплат и проблем с подтверждением происхождения оборудования.</p>
+							</div>
+							<div class="deliverysec_mainpage_content_title_warranty_rightpart">
+								<div class="deliverysec_mainpage_content_title_warranty_rightpart_list">
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Официальная заводская <br> гарантия</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Сопровождение на весь <br> гарантийный срок</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Полный пакет закрывающих <br>и технических документов</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Официально <br> растаможенное <br> оборудование</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Отсутствие скрытых платежей <br> и юридических рисков</p>
+									</div>
+									<div class="deliverysec_mainpage_content_title_warranty_rightpart_list_item">
+										<p>Ответственность за <br> оборудование и <br> комплектующие</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="deliverysec_mainpage_content_title_consult">
+							<p>Мы сопровождаем поставку не только до отгрузки, а до момента успешного запуска оборудования.</p>
+							<a href="#" class="order">
+								<p>Получить консультацию</p>
+								<img src="img/blue_arrow.svg" alt="">
+							</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+
+		<section class="aboutussec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="aboutussec_mainpage_content">
+						<div class="aboutussec_mainpage_content_title">
+							<h2>О нас</h2>
+							<div class="aboutussec_mainpage_content_title_info">
+								<p>МК Системы — поставщик станков, промышленного оборудования и комплектующих для производственных предприятий по всей России.</p>
+								<p>Мы помогаем бизнесу быстро закрывать задачи производства: подобрать нужную запчасть, найти аналог, рассчитать поставку, подготовить коммерческое предложение и сократить простой оборудования.</p>
+								<p>За 18 лет работы мы хорошо изучили рынок промышленного оборудования, поставщиков и реальные потребности предприятий. Поэтому можем быстро сориентировать по цене, срокам и подобрать оптимальный вариант под задачу и бюджет.</p>
+							</div>
+							
+							<div class="aboutussec_mainpage_content_title_choicelist">
+								<h3>Почему выбирают нас</h3>
+								<p>18 лет опыта в поставках оборудования</p>
+								<p>Подбор аналогов, если нужной позиции нет в каталоге</p>
+								<p>Отгрузка от 1 дня по складским позициям</p>
+								<p>Полный пакет документов для бухгалтерии и тендеров</p>
+								<p>Доставка по всей России</p>
+							</div>
+							
+						</div>
+						<div class="aboutussec_mainpage_content_total">
+							<div class="aboutussec_mainpage_content_total_item">
+								<b>10 000+</b>
+								<p>поставленных позиций</p>
+							</div>
+							<div class="aboutussec_mainpage_content_total_item">
+								<b>200+</b>
+								<p>типов комплектующих</p>
+							</div>
+							<div class="aboutussec_mainpage_content_total_item">
+								<b>85+</b>
+								<p>направлений поставки</p>
+							</div>
+							<div class="aboutussec_mainpage_content_total_item">
+								<b>100%</b>
+								<p>контроль соответствия</p>
+							</div>
+							<a href="#" class="aboutussec_mainpage_content_title_link btn-fill order">
+								связаться с нами
+							</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<section class="formsec_mainpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="formsec_mainpage_content">
+						<div class="formsec_mainpage_content_form_container">
+							<form action="#" class="formsec_mainpage_content_form">
+								<h3>Нужна поставка оборудования или комплектующих?</h3>
+								<p>Оставьте заявку — подберём позицию, рассчитаем цену и сроки</p>
+								<input type="tel" placeholder="Ваш телефон" required="" data-tel-input>
+								<input type="text" placeholder="Ваша компания" required="">
+								<button class="formsec_mainpage_content_form_submitbtn btn-fill" type="submit">
+									Оставить заявку
+								</button>
+								<div class="formsec_mainpage_content_form_policy">
+									<p>Нажимая кнопку “Оставить заявку” Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a>
+									</p>
+								</div>
+							</form>
+						</div>
+						<img src="img/formsec_mainpage_content_image.png" alt="">
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="full_container">
+				<div class="main__container">
+					<div class="footer_content">
+						<h2>Контакты</h2>
+						<b>Обратная связь</b>
+						<div class="footer_content_main">
+							<div class="footer_content_main_form_container">
+								<form action="#" class="footer_content_main_form">
+									<div class="footer_content_main_form_item">
+										<h4>Имя</h4>
+										<input type="text" required="required">
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Почта</h4>
+										<input type="email" required="required">
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Ваш телефон</h4>
+										<input type="tel" required="required" data-tel-input>
+									</div>
+									<div class="footer_content_main_form_item">
+										<h4>Комментарии</h4>
+										<textarea name="" id="comment" ></textarea>
+									</div>
+									<button class="">
+										Оставить заявку
+									</button>
+								</form>
+							</div>
+							<div class="footer_content_main_map">
+								<p>ООО «МК-Системы»</p>
+								<div class="mapsec_contactspage_map" id="map">
+									
+								</div>
+								<p>Адрес г . Москва, Дербеневская набережная, дом 11, 8 этаж, помещение 1В, офис 806</p>
+							</div>
+						</div>
+						<div class="footer_content_downpart">
+							<div class="footer_content_downpart_logoandinfo">
+								<a href="index.html">
+									<img src="img/footer_logo2.svg" alt="">
+								</a>
+								<p>Общество с ограниченной ответственностью «МК-Системы» ООО «МК-Системы»</p>
+								<p>ИНН 7725300847</p>
+								<p>ОГРН 5157746188518</p>
+							</div>
+							<div class="footer_content_downpart_contacts">
+								<div class="footer_content_downpart_contacts_order">
+									<p>Прием заявок 24/7</p>
+									<a href="tel:+74951367339" type="tel">
+										+8 (495) 136-73-39
+									</a>
+									<a href="mailto:mksistemy@yandex.ru">
+										mksistemy@yandex.ru
+									</a>
+								</div>
+								<nav class="footer_content_downpart_contacts_navlist">
+									<ul>
+										<li>
+											<a href="about.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="catalog.html">
+												Каталог
+											</a>
+										</li>
+										<li>
+											<a href="supplies.html">
+												Поставки
+											</a>
+										</li>
+										<li>
+											<a href="blog.html">
+												Блог
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer_content_downpart_policy">
+								<a href="policy.html">
+									Политика конфиденциальности
+								</a>
+								<a href="#">
+									Обработка персональных данных
+								</a>
+								<a href="mailto:mksistemy@yandex.ru">
+									Нашли ошибку? Напишите нам!
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+		<script src="js/jquery-3.6.2.min.js"></script>
+	 	<script src="js/slick.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/main.js"></script> 
+	</div>
+</body>
+</html>
+
